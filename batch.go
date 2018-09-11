@@ -7,7 +7,7 @@ import (
 )
 
 // ParallelBatchCommits is the number of batch commits that can be in-flight before blocking.
-// TODO(ipfs/go-ipfs#4299): Experiment with multiple datastores, storage
+// TODO(dms3-fs/go-dms3-fs#4299): Experiment with multiple datastores, storage
 // devices, and CPUs to find the right value/formula.
 var ParallelBatchCommits = runtime.NumCPU() * 2
 

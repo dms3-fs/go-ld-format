@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	cid "github.com/ipfs/go-cid"
-	mh "github.com/multiformats/go-multihash"
+	cid "github.com/dms3-fs/go-cid"
+	mh "github.com/dms3-mft/go-multihash"
 )
 
 type EmptyNode struct{}

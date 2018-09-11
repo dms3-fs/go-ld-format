@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	blocks "github.com/ipfs/go-block-format"
+	blocks "github.com/dms3-fs/go-block-format"
 
-	cid "github.com/ipfs/go-cid"
+	cid "github.com/dms3-fs/go-cid"
 )
 
 type Resolver interface {
@@ -19,7 +19,7 @@ type Resolver interface {
 	Tree(path string, depth int) []string
 }
 
-// Node is the base interface all IPLD nodes must implement.
+// Node is the base interface all DMS3LD nodes must implement.
 //
 // Nodes are **Immutable** and all methods defined on the interface are
 // **Thread Safe**.
@@ -44,7 +44,7 @@ type Node interface {
 	Size() (uint64, error)
 }
 
-// Link represents an IPFS Merkle DAG Link between Nodes.
+// Link represents an DMS3FS Merkle DAG Link between Nodes.
 type Link struct {
 	// utf string name. should be unique per object
 	Name string // utf8

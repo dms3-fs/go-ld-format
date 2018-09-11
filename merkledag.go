@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	cid "github.com/ipfs/go-cid"
+	cid "github.com/dms3-fs/go-cid"
 )
 
 var ErrNotFound = fmt.Errorf("merkledag: not found")
@@ -31,14 +31,14 @@ type NodeGetter interface {
 type LinkGetter interface {
 	NodeGetter
 
-	// TODO(ipfs/go-ipld-format#9): This should return []*cid.Cid
+	// TODO(dms3-fs/go-ld-format#9): This should return []*cid.Cid
 
 	// GetLinks returns the children of the node refered to by the given
 	// CID.
 	GetLinks(ctx context.Context, nd *cid.Cid) ([]*Link, error)
 }
 
-// DAGService is an IPFS Merkle DAG service.
+// DAGService is an DMS3FS Merkle DAG service.
 type DAGService interface {
 	NodeGetter
 

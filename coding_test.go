@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	blocks "github.com/ipfs/go-block-format"
-	cid "github.com/ipfs/go-cid"
-	mh "github.com/multiformats/go-multihash"
+	blocks "github.com/dms3-fs/go-block-format"
+	cid "github.com/dms3-fs/go-cid"
+	mh "github.com/dms3-mft/go-multihash"
 )
 
 func init() {

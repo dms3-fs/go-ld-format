@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	cid "github.com/ipfs/go-cid"
+	cid "github.com/dms3-fs/go-cid"
 )
 
 // Test dag
